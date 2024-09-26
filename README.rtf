@@ -1,0 +1,186 @@
+{\rtf1\ansi\ansicpg936\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+Code to reproduce the analysis and figures for the article:
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 CH. Li, M. Kotz, P. Pradhan, XD. Wu, Z. Li, GQ. Chen. Global Climate Niche for Grazing Implies Shifting Suitability
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 1. Data
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Primary data are not provided in the repository due to storage capacity. Full download of these data requires storage capacity of 246GB. All primary data used in this study are openly accessible at the following sites:
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 CMIP (Coupled Model Intercomparison Project) can be accessed at https://pcmdi.llnl.gov/CMIP5/. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 ESFG data (Earth System Grid Federation) can be accessed at https://esgf.llnl.gov CHELSA V2 (Climatologies at high resolution for the earth\'92s land surface areas) can be accessed at https://chelsa-climate.org. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Hyde (History database of the Global Environment) can be accessed at https://www.pbl.nl/en/hyde-history-database-of-the-global-environment. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Gridded Livestock of the World (GLW 3) database can be accessed at https://livestockdata.org/contributors/food-and-agriculture-organization-united-nations/gridded-livestock-world-glw3. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Gridded Population of the World Version 4 (GPWv4) from SEDAC (Socioeconomic Data and Applications Center) can be accessed at https://sedac.ciesin.columbia.edu/data/collection/gpw-v4. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 The MOD17A3HGF Version 6 dataset can be accessed at https://lpdaac.usgs.gov/products/mod17a3hgfv006/. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Percent Tree Coverage (PTC) Global version can be accessed at https://globalmaps.github.io/ptc.html. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 EARTH Env data can be accessed at https://www.earthenv.org. Land-Use Harmonization (LUH2) can be accessed at https://luh.umd.edu. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Global Aboveground and Belowground Biomass Carbon Density Maps can be accessed at https://daac.ornl.gov/VEGETATION/guides/Global_Maps_C_Density_2010.html. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 SOC data is from literature (https://pnas.org/doi/full/10.1073/pnas.1706103114. 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+\
+
+\f0\fs26\fsmilli13333 2. Code for replication
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code for historical climate data for GISS, historical pasture data, niche threshold for global and continental values are in script code_climate1_land. Analysis for two new climate models are in code_climate2.m. Analysis for 4 extra climate models are run at code_climate_data.m
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to run present climate data and land use, rescaling to align with historical data are in\'a0 script code_nicheanalysis.m
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to run analysis for livestock distribution, above-ground biomass carbon, below ground biomass carbon, SOC, are in script code_livestock_distribution
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to process data from future land use, future climate change under rcp scenarios, future niche threshold, are run at code_future_climate.m
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to run overgrazing analysis are run in code_overgraze_analysis.m
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to run uncertainty analysis for livestock distribution, carbon storage are in script code_montecarlo.m
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to run analysis for future change of grassland, and future climate change, future shift of niche range, and future continental analysis are run at code_future_grassland.m 
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to run reanalysis by using smaller niche range are in script code_regional_analysis.m and also code_climate1_land
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code for analyzing niche for regional scale are in script code_regional_climate.m
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 Code to reproduce the figures are run at code_figures.m
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 3. Dependencies required
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 For Matlab, our scripts require the dependencies require the climate toolbox
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 (https://zenodo.org/badge/latestdoi/171331090), land mask, and addcolorplus package.
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 All scripts were run in version Matlab_R2021b environment.
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 \'a0
+\f1\fs21\fsmilli10667 \
+
+\f0\fs26\fsmilli13333 For any further questions please feel free to contact: Li.Chaohui@pik-potsdam.de
+\f1\fs21\fsmilli10667 \
+\pard\pardeftab720\fi746\sl400\qj\partightenfactor0
+\cf2 \'a0\
+}
